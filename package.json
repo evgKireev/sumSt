@@ -1,7 +1,7 @@
 {
-  "name": "sum",
+  "name": "sumSt",
   "version": "0.1.0",
-  "homepage": "https://evgKireev.github.io/sum",
+  "homepage": "https://evgKireev.github.io/sumSt",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -19,7 +19,6 @@
     "apisauce": "^2.1.6",
     "axios": "^1.1.2",
     "classnames": "^2.3.2",
-    "gh-pages": "^4.0.0",
     "html-react-parser": "^3.0.16",
     "lodash.debounce": "^4.0.8",
     "react": "^18.2.0",
@@ -70,6 +69,7 @@
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.7",
     "@types/react-slick": "^0.23.10",
+    "gh-pages": "^5.0.0",
     "prettier": "2.8.8"
   }
 }

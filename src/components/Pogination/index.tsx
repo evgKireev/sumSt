@@ -6,7 +6,6 @@ import { useAppDispatch, useAppSelector } from '../../redux/hooks'
 import styles from './Pogination.module.scss'
 import NextArrow from '../../assets/NextArrow'
 import PrevArrow from '../../assets/PrevArrow'
-import { useEffect } from 'react'
 
 type PoginationType = {
   totalPageCount: number
@@ -14,9 +13,10 @@ type PoginationType = {
 }
 
 const Pogination: React.FC<PoginationType> = ({ totalPageCount, clasName }) => {
+  const { poginationSelect } = useAppSelector((state) => state.poginationSlice)
   const dispatch = useAppDispatch()
   const handlePageClick = (event: any) => {
-    dispatch(setPoginationSelect(event.selected + 1))
+    dispatch(setPoginationSelect(event))
   }
   return (
     <div className={clasName}>
@@ -35,8 +35,9 @@ const Pogination: React.FC<PoginationType> = ({ totalPageCount, clasName }) => {
         breakLabel="..."
         nextLabel={<NextArrow />}
         previousLabel={<PrevArrow />}
-        onPageChange={handlePageClick}
+        onPageChange={(event) => handlePageClick(event.selected)}
         pageCount={totalPageCount}
+        forcePage={poginationSelect}
       />
     </div>
   )

@@ -32,11 +32,12 @@ const Filter: React.FC<FilterType> = ({
   const dispatch = useAppDispatch()
 
   const filterVacanciesHandler = () => {
-    dispatch(setPoginationSelect(1))
+    dispatch(setPoginationSelect(0))
     dispatch(getVacancies({ payment_from: valueSelectFrom, payment_to: valueSelectTo, catalogues: dataSelect.key }))
   }
 
   const resetFilterHandler = () => {
+    dispatch(setPoginationSelect(0))
     dispatch(setSearchValue(''))
     setValueSelect('')
     setValueSelectFrom('')

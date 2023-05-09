@@ -14,13 +14,13 @@ import classNames from 'classnames'
 
 const Main = () => {
   const [valueSelect, setValueSelect] = useState<string | null>(null)
-  const [valueSelectFrom, setValueSelectFrom] = useState<number | ''>(0)
-  const [valueSelectTo, setValueSelectTo] = useState<number | ''>(0)
+  const [valueSelectFrom, setValueSelectFrom] = useState<number | ''>('')
+  const [valueSelectTo, setValueSelectTo] = useState<number | ''>('')
   const { dataVacancies, dataSelect, searchValue, statusVacancies, vacanciesFavorites, total } = useAppSelector(
     (state) => state.vacanciesSlice
   )
   const { poginationSelect } = useAppSelector((state) => state.poginationSlice)
-  const totalPageCount = total > 500 ? Math.ceil(500 / 4) : Math.ceil(total / 4)
+  const totalPageCount = total > 500 ? Math.ceil(500 / 4 + 1) : Math.ceil(total / 4 + 1)
   const dispatch = useAppDispatch()
 
   useEffect(() => {

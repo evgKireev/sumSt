@@ -6,6 +6,7 @@ import Button from '../Button'
 import styles from './Search.module.scss'
 import { useAppDispatch } from '../../redux/hooks'
 import { setSearchValue } from '../../redux/vacanciesSlice'
+import { setPoginationSelect } from '../../redux/poginationSlice'
 
 type SearchType = {
   btnSearchHandler: () => void
@@ -16,6 +17,7 @@ const Search: React.FC<SearchType> = ({ btnSearchHandler }) => {
   const dispatch = useAppDispatch()
   useEffect(() => {
     dispatch(setSearchValue(debouncedValue))
+    dispatch(setPoginationSelect(0))
   }, [debouncedValue])
 
   return (
