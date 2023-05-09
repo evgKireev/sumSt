@@ -1,0 +1,125 @@
+@import './../../scss/vars';
+
+.wrap {
+  max-width: 315px;
+  background-color: white;
+  border: 1px solid #eaebed;
+  border-radius: 12px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.reset {
+  font-weight: 500;
+  font-size: 14px;
+  color: $grey;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  &:hover {
+    transition: all 0.3s;
+    color: $hover;
+    svg {
+      line {
+        transition: all 0.3s;
+        stroke: $hover;
+      }
+    }
+  }
+  &:active {
+    color: $active;
+    svg {
+      line {
+        stroke: $active;
+      }
+    }
+  }
+}
+
+.industry,
+.salary {
+  margin-bottom: 20px;
+}
+
+.selectTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+@media (max-width: 920px) {
+  .wrap {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .title {
+    font-size: 18px;
+  }
+  .reset {
+    font-size: 12px;
+  }
+
+  .selectTitle {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 580px) {
+  .wrap {
+    padding: 15px;
+  }
+  .inner {
+    line-height: 16px;
+    margin-bottom: 28px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .reset {
+    font-size: 10px;
+  }
+
+  .selectTitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .industry,
+  .salary {
+    margin-bottom: 16px;
+  }
+
+  .selectTitle {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 5px;
+  }
+}

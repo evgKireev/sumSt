@@ -1,0 +1,13 @@
+@import '_vars.scss';
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, Tahoma, sans-serif;
+  background-color: $bg;
+  color: $default;
+  font-style: normal;
+}
+

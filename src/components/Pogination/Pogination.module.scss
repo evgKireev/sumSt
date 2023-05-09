@@ -1,0 +1,105 @@
+@import '../../scss/vars';
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 24px 0 44px 0;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  border: 1px solid #eaebed;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 0 8px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $hover;
+    transition: all 0.5s;
+  }
+}
+
+.previous__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  border: 1px solid #eaebed;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $hover;
+    transition: all 0.5s;
+  }
+}
+
+.next__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  border: 1px solid #eaebed;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $hover;
+    transition: all 0.5s;
+  }
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+}
+
+.active {
+  a {
+    color: #fff;
+  }
+  background-color: $active;
+}
+
+.disabled {
+  pointer-events: none;
+  svg {
+    path {
+      fill: #d5d6dc;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .items {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .items {
+    font-size: 12px;
+  }
+}

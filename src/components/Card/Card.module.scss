@@ -1,0 +1,134 @@
+@import './../../scss/vars';
+
+.wrap {
+  background-color: $white;
+  padding: 25px;
+  border: 1px solid #eaebed;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.innerTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12.5px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $acsent;
+  div {
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      opacity: 80%;
+      transition: all 0.5s;
+    }
+  }
+  svg {
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      path {
+        transition: all 0.5s;
+        stroke: $hover;
+      }
+    }
+  }
+}
+
+.salary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.dot {
+  color: $grey;
+}
+
+.loc {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media (max-width: 920px) {
+  .innerTitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .salary {
+    gap: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    span {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .loc {
+    gap: 10px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 580px) {
+  .innerTitle {
+    font-size: 16px;
+    line-height: 20px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+    .loc {
+      gap: 9px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+
+  .salary {
+    gap: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    span {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .innerTitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .salary {
+    gap: 6px;
+    font-size: 10px;
+    line-height: 14px;
+    span {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+  .loc {
+    font-size: 10px;
+    gap: 6px;
+  }
+}

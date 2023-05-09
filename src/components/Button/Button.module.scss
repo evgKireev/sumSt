@@ -1,0 +1,34 @@
+@import './../../scss/vars';
+
+.button {
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  transition: all 0.5s;
+  color: $white;
+  background-color: $acsent;
+  border: none;
+  padding: 9.5px 98.5px;
+  &:hover {
+    background-color: $hover;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  &:active {
+    background-color: $active;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+@media (max-width: 920px) {
+  .button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

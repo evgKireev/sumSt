@@ -1,0 +1,26 @@
+.mainInner {
+  display: flex;
+  gap: 28px;
+}
+
+.content {
+  width: 100%;
+}
+
+.loader {
+  height: 60vh !important;
+}
+
+.noSearch {
+  margin-top: 20px;
+}
+
+.pagination {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .mainInner {
+    flex-direction: column;
+  }
+}
