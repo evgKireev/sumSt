@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sumSt/static/css/main.e23f79c7.css",
+    "main.js": "/sumSt/static/js/main.a97e54c2.js",
+    "index.html": "/sumSt/index.html",
+    "main.e23f79c7.css.map": "/sumSt/static/css/main.e23f79c7.css.map",
+    "main.a97e54c2.js.map": "/sumSt/static/js/main.a97e54c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e23f79c7.css",
+    "static/js/main.a97e54c2.js"
+  ]
+}
