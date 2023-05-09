@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sumSt/static/css/main.bc7fc24a.css",
-    "main.js": "/sumSt/static/js/main.6dc61cc5.js",
+    "main.css": "/sumSt/static/css/main.bd7d04e6.css",
+    "main.js": "/sumSt/static/js/main.52fc1f32.js",
     "index.html": "/sumSt/index.html",
-    "main.bc7fc24a.css.map": "/sumSt/static/css/main.bc7fc24a.css.map",
-    "main.6dc61cc5.js.map": "/sumSt/static/js/main.6dc61cc5.js.map"
+    "main.bd7d04e6.css.map": "/sumSt/static/css/main.bd7d04e6.css.map",
+    "main.52fc1f32.js.map": "/sumSt/static/js/main.52fc1f32.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc7fc24a.css",
-    "static/js/main.6dc61cc5.js"
+    "static/css/main.bd7d04e6.css",
+    "static/js/main.52fc1f32.js"
   ]
 }
