@@ -16,6 +16,7 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(false)
   const navigate = useNavigate()
   const location = useLocation()
+  console.log(menuActive)
   return (
     <div className={styles.wrap}>
       <div className={styles.inner}>
