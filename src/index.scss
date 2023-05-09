@@ -52,3 +52,18 @@ select {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  min-height: 40px;
+  background: #acadb9;
+  border-radius: 20px;
+}
