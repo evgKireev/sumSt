@@ -29,7 +29,6 @@ const getVacancies = ({ keyword, payment_from, payment_to, catalogues, page }: V
     { published, keyword, payment_from, payment_to, catalogues, count, page },
     {
       headers: {
-        Authorization: `Bearer ${token}`,
         'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
         'X-Api-App-Id': client_secret
       }
@@ -43,7 +42,6 @@ const getVacancie = ({ id }: VacanciesTypePayload) => {
     {},
     {
       headers: {
-        Authorization: `Bearer ${token}`,
         'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
         'X-Api-App-Id': client_secret
       }
@@ -57,7 +55,6 @@ const getIndustry = () => {
     {},
     {
       headers: {
-        Authorization: `Bearer ${token}`,
         'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
         'X-Api-App-Id': client_secret
       }
