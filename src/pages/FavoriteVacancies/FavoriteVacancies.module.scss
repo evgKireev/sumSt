@@ -4,7 +4,14 @@
 }
 
 .pagination {
- display: flex;
- justify-content: center;
- margin-top: 104px;
+  display: flex;
+  justify-content: center;
+  margin-top: 104px;
+  padding-bottom: 44px;
+}
+
+@media (max-width: 840px) {
+  .pagination {
+    margin-top: 50px;
+  }
 }
