@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sumSt/static/css/main.14033bc0.css",
+    "main.css": "/sumSt/static/css/main.8771f953.css",
     "main.js": "/sumSt/static/js/main.03fc9f79.js",
     "index.html": "/sumSt/index.html",
-    "main.14033bc0.css.map": "/sumSt/static/css/main.14033bc0.css.map",
+    "main.8771f953.css.map": "/sumSt/static/css/main.8771f953.css.map",
     "main.03fc9f79.js.map": "/sumSt/static/js/main.03fc9f79.js.map"
   },
   "entrypoints": [
-    "static/css/main.14033bc0.css",
+    "static/css/main.8771f953.css",
     "static/js/main.03fc9f79.js"
   ]
 }
