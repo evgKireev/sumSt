@@ -1,6 +1,8 @@
 import { create } from 'apisauce'
-import { client_id, client_secret, login, password } from '../../@types/constants'
+import { ACCESS_TOKEN_KEY, client_id, client_secret, login, password } from '../../@types/constants'
 import { VacanciesTypePayload } from '../../@types/vacancies'
+
+const token = sessionStorage.getItem(ACCESS_TOKEN_KEY)
 
 export const API = create({
   baseURL: 'https://startup-summer-2023-proxy.onrender.com'
@@ -12,7 +14,8 @@ const authUser = () => {
     { login, password, client_id, client_secret },
     {
       headers: {
-        'x-secret-key': 'GEU4nvd3rej*jeh.eqp'
+        'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
+        'X-Api-App-Id': client_secret
       }
     }
   )
@@ -26,6 +29,7 @@ const getVacancies = ({ keyword, payment_from, payment_to, catalogues, page }: V
     { published, keyword, payment_from, payment_to, catalogues, count, page },
     {
       headers: {
+        Authorization: `Bearer ${token}`,
         'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
         'X-Api-App-Id': client_secret
       }
@@ -39,6 +43,7 @@ const getVacancie = ({ id }: VacanciesTypePayload) => {
     {},
     {
       headers: {
+        Authorization: `Bearer ${token}`,
         'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
         'X-Api-App-Id': client_secret
       }
@@ -52,6 +57,7 @@ const getIndustry = () => {
     {},
     {
       headers: {
+        Authorization: `Bearer ${token}`,
         'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
         'X-Api-App-Id': client_secret
       }

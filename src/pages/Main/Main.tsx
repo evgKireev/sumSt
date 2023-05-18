@@ -78,10 +78,12 @@ const Main = () => {
         ) : (
           <Loader className={styles.loader} />
         )}
-        <Pogination
-          clasName={classNames({ [styles.pagination]: statusVacancies !== 'fullfilled' })}
-          totalPageCount={totalPageCount}
-        />
+        {!dataVacancies.length ? null : (
+          <Pogination
+            clasName={classNames({ [styles.pagination]: statusVacancies !== 'fullfilled' })}
+            totalPageCount={totalPageCount}
+          />
+        )}
       </div>
     </div>
   )

@@ -28,7 +28,7 @@ const Search: React.FC<SearchType> = ({ btnSearchHandler }) => {
         className={styles.input}
         placeholder="Введите название вакансии"
         type="text"
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) => setValue(e.target.value.substring(0, 30))}
       />
       <div data-elem="search-button">
         <Button onClick={btnSearchHandler} title={'Поиск'} className={styles.btn} />
